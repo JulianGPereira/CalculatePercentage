@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alert Percentages</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="text/javascript" src="alert.js"></script>
+  </head>
+  <body>
+    <div class="alerts-container">
+      
+      <div class="alert-header">
+        <h1 class="mb-3">Alert Percentages</h1>
+        <div class="row g-3">
+          <div class="col-auto">
+            <input class="form-control" type="file" id="data-file" accept=".csv">
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-primary" onclick="calcAlertsPercentages()">Calculate Percentages</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-table">
+        <table id="alertTable" class="table table-striped hover">
+          <thead>
+            <tr>
+              <th>Emp ID</th>
+              <th>No of alerts</th>
+              <th>% alertsToTotal</th>
+              <th>No of Distress alerts</th>
+              <th>%DistressAlertsToSubtotal</th>
+              <th>No of Fall alerts</th>
+              <th>%FallAlertsToSubtotal</th>
+            </tr>
+          </thead>
+          <tbody id="alertTableBody"></tbody>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>

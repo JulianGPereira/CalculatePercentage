@@ -1,0 +1,28 @@
+.alerts-container {
+    margin: 2rem;
+}
+
+.alert-header{
+    margin-bottom: 3rem;
+}
+
+.alert-header .choose-file{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.alert-header .text {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+.alert-header .calc-btn {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.alert-table tr:hover{
+    background: #f5f7fa;
+}
